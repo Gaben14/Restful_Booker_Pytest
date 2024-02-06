@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6cb0a2a-e14a-4dee-8eb3-6153a945a948" name="Changes" comment="created basic project structure, added readme.md and requirements.txt to the project.">
-      <change afterPath="$PROJECT_DIR$/api_requests/make_requests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_get_all_bookings.py" afterDir="false" />
+    <list default="true" id="e6cb0a2a-e14a-4dee-8eb3-6153a945a948" name="Changes" comment="created the first test: test_get_all_bookings.py also updated the make_requests.py file with an API call.">
+      <change afterPath="$PROJECT_DIR$/tests/test_ping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requests/make_requests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_requests/make_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_get_all_bookings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_get_all_bookings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +69,20 @@
       <option name="project" value="LOCAL" />
       <updated>1707147681434</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created the first test: test_get_all_bookings.py also updated the make_requests.py file with an API call.">
+      <option name="closed" value="true" />
+      <created>1707151539557</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707151539557</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created basic project structure, added readme.md and requirements.txt to the project." />
-    <option name="LAST_COMMIT_MESSAGE" value="created basic project structure, added readme.md and requirements.txt to the project." />
+    <MESSAGE value="created the first test: test_get_all_bookings.py also updated the make_requests.py file with an API call." />
+    <option name="LAST_COMMIT_MESSAGE" value="created the first test: test_get_all_bookings.py also updated the make_requests.py file with an API call." />
   </component>
 </project>
