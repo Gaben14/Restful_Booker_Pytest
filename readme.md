@@ -9,7 +9,7 @@ Test Cases to cover:
 
 | Test Case   | Description                                                                        | Status |
 |-------------|------------------------------------------------------------------------------------|--------|
-| Test Case 1 | Ping - A simple health check endpoint to confirm whether the API is up and running | N / A  |
+| Test Case 1 | Ping - A simple health check endpoint to confirm whether the API is up and running | Done   |
 | Test Case 2 | Get Booking with a specific ID                                                     | Done   |
 | Test Case 3 | Get All Bookings  (and print them out in a file?)                                  | N / A  |
 | Test Case 4 | Get Bookings filtered by name                                                      | N / A  |
