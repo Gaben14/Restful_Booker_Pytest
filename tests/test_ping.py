@@ -1,9 +1,4 @@
-from api import api_request
-
-
-def test_get_ping():
-    # Act
-    BookerClient = api_request.BookerClient()
+def test_get_ping(set_up):
 
     # Assert
-    assert BookerClient.get_ping().status_code == 201
+    assert set_up.get_ping().status_code == 201

@@ -27,6 +27,7 @@ class BookerClient:
 
     def get_booking_by_date(self, checkin_date, checkout_date):
         # Arrange
-        response = requests.get(f'{self.base_url}/booking?checkin')
+        # /booking?checkin=2014-03-13&checkout=2014-05-21
+        response = requests.get(f'{self.base_url}/booking?checkin={checkin_date}&checkout={checkout_date}')
 
         return response

@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6cb0a2a-e14a-4dee-8eb3-6153a945a948" name="Changes" comment="API folder has been renamed.&#10;readme.md has been updated with markdown.&#10;Added the get_ping() method to the api_request.py file.&#10;Also created the test_ping.py file.">
-      <change afterPath="$PROJECT_DIR$/api/auth_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_get_bookings.py" afterDir="false" />
+    <list default="true" id="e6cb0a2a-e14a-4dee-8eb3-6153a945a948" name="Changes" comment="Project has been re-organized. conftest.py has been created and the set_up fixture has been added to it.&#10;All get calls have been updated to use the set_up.">
+      <change afterPath="$PROJECT_DIR$/tests/test_auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/booking_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_get_all_bookings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/auth_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/auth_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/booking_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/booking_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_get_bookings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_get_bookings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_ping.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ping.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,13 +87,22 @@
       <option name="project" value="LOCAL" />
       <updated>1707228190600</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Project has been re-organized. conftest.py has been created and the set_up fixture has been added to it.&#10;All get calls have been updated to use the set_up.">
+      <option name="closed" value="true" />
+      <created>1707330963699</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707330963699</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created basic project structure, added readme.md and requirements.txt to the project." />
     <MESSAGE value="created the first test: test_get_all_bookings.py also updated the make_requests.py file with an API call." />
     <MESSAGE value="API folder has been renamed.&#10;readme.md has been updated with markdown.&#10;Added the get_ping() method to the api_request.py file.&#10;Also created the test_ping.py file." />
-    <option name="LAST_COMMIT_MESSAGE" value="API folder has been renamed.&#10;readme.md has been updated with markdown.&#10;Added the get_ping() method to the api_request.py file.&#10;Also created the test_ping.py file." />
+    <MESSAGE value="Project has been re-organized. conftest.py has been created and the set_up fixture has been added to it.&#10;All get calls have been updated to use the set_up." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project has been re-organized. conftest.py has been created and the set_up fixture has been added to it.&#10;All get calls have been updated to use the set_up." />
   </component>
 </project>

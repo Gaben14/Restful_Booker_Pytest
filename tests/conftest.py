@@ -6,6 +6,4 @@ from api import booking_api
 @pytest.fixture
 def set_up():
     # Act
-    BookerClient = booking_api.BookerClient()
-
-    return BookerClient
+    return booking_api.BookerClient()
