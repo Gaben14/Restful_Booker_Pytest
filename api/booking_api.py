@@ -4,7 +4,7 @@ import requests
 class BookerClient:
 
     # Constructor
-    def __init__(self, base_url='http://localhost:3001'):
+    def __init__(self, base_url):
         # base_url needs to be changed to a GitHub Secret variable later
         self.base_url = base_url
 
