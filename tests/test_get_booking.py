@@ -1,10 +1,10 @@
-import requests
-
-
 def test_get_single_booking(set_up):
+    single_booking = set_up.get_single_booking(2)
+
     # Assert
-    assert set_up.get_single_booking(2).status_code == 200
-    body = set_up.get_single_booking(2).json()
+    assert single_booking.status_code == 200
+    body = single_booking.json()
+    print(body)
     assert body['firstname'] == 'Eric'
     assert body['lastname'] == 'Smith'
 

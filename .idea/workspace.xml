@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6cb0a2a-e14a-4dee-8eb3-6153a945a948" name="Changes" comment="auth_api.py and test_auth.py is now completed. They need to be refactored, but now I have the token.">
+    <list default="true" id="e6cb0a2a-e14a-4dee-8eb3-6153a945a948" name="Changes" comment="booking_api.py has been updated with post_booking method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/auth_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/auth_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/booking_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/booking_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_get_booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_get_booking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_post_booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_post_booking.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +28,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2bx6b8xjACHA5UiONbr2pDVj8nQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,11 +39,34 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_get_booking.test_get_filter_by_name.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Python tests for test_get_booking.test_get_filter_by_name" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Restful_Booker_Pytest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_get_booking.test_get_filter_by_name&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_get_booking.test_get_filter_by_name" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -101,7 +123,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707420524478</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="auth_api.py and test_auth.py has been refactored. Two new fixtures have been added to conftest.py">
+      <option name="closed" value="true" />
+      <created>1707496365433</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707496365433</updated>
+    </task>
+    <task id="LOCAL-00007" summary="booking_api.py has been updated with post_booking method.">
+      <option name="closed" value="true" />
+      <created>1707921030785</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707921030785</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -110,6 +148,8 @@
     <MESSAGE value="API folder has been renamed.&#10;readme.md has been updated with markdown.&#10;Added the get_ping() method to the api_request.py file.&#10;Also created the test_ping.py file." />
     <MESSAGE value="Project has been re-organized. conftest.py has been created and the set_up fixture has been added to it.&#10;All get calls have been updated to use the set_up." />
     <MESSAGE value="auth_api.py and test_auth.py is now completed. They need to be refactored, but now I have the token." />
-    <option name="LAST_COMMIT_MESSAGE" value="auth_api.py and test_auth.py is now completed. They need to be refactored, but now I have the token." />
+    <MESSAGE value="auth_api.py and test_auth.py has been refactored. Two new fixtures have been added to conftest.py" />
+    <MESSAGE value="booking_api.py has been updated with post_booking method." />
+    <option name="LAST_COMMIT_MESSAGE" value="booking_api.py has been updated with post_booking method." />
   </component>
 </project>

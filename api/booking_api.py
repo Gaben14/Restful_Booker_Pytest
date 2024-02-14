@@ -49,5 +49,14 @@ class BookerClient:
         }
 
         # Act
-        response = requests.post(url, booking_data)
+        response = requests.post(url, json=booking_data)
+        """We need to specify that the booking_data is the JSON that we are sending,
+        otherwise the requests library will try to use it as the data= parameter, 
+        data= is used for forms or form submissions
+        
+        The key here is naming parameters that post uses the following:
+        post(url, data=None, json=None, **kwargs)
+        Ctrl + Left Click / the Middle/scroller  on the post function will open the
+        detailed description  
+        """
         return response
