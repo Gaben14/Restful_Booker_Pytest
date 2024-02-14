@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6cb0a2a-e14a-4dee-8eb3-6153a945a948" name="Changes" comment="booking_api.py has been updated with post_booking method.">
+    <list default="true" id="e6cb0a2a-e14a-4dee-8eb3-6153a945a948" name="Changes" comment="post_booking method inside booking_api.py has been updated with the right kwargs. (json=)">
+      <change afterPath="$PROJECT_DIR$/tests/test_put_booking.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/booking_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/booking_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_get_booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_get_booking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_post_booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_post_booking.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707921030785</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="post_booking method inside booking_api.py has been updated with the right kwargs. (json=)">
+      <option name="closed" value="true" />
+      <created>1707932088750</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707932088750</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,6 +159,7 @@
     <MESSAGE value="auth_api.py and test_auth.py is now completed. They need to be refactored, but now I have the token." />
     <MESSAGE value="auth_api.py and test_auth.py has been refactored. Two new fixtures have been added to conftest.py" />
     <MESSAGE value="booking_api.py has been updated with post_booking method." />
-    <option name="LAST_COMMIT_MESSAGE" value="booking_api.py has been updated with post_booking method." />
+    <MESSAGE value="post_booking method inside booking_api.py has been updated with the right kwargs. (json=)" />
+    <option name="LAST_COMMIT_MESSAGE" value="post_booking method inside booking_api.py has been updated with the right kwargs. (json=)" />
   </component>
 </project>

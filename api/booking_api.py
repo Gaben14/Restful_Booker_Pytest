@@ -60,3 +60,31 @@ class BookerClient:
         detailed description  
         """
         return response
+
+    def put_update_booking(self, booking_id, token):
+        # Arrange
+        url = f'{self.base_url}/booking/{booking_id}'
+        """
+        For the Header we need to create a dictionary, and assign it to the 
+        headers= as seen below. Token is coming from the get_token fixture.
+        """
+        head = {"Cookie": f"token={token}"}
+        """
+        for the PUT command all the values (keys) must be included, 
+        otherwise you will get an error 
+        """
+        booking_data = {
+                "firstname": "Gabor",
+                "lastname": "Zorad",
+                "totalprice": 111,
+                "depositpaid": True,
+                "bookingdates": {
+                    "checkin": "2019-01-01",
+                    "checkout": "2020-01-01"
+                },
+                "additionalneeds": "Breakfast"
+        }
+
+        # Act
+        response = requests.put(url, headers=head, json=booking_data)
+        return response
