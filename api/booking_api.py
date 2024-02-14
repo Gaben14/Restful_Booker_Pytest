@@ -31,3 +31,23 @@ class BookerClient:
         response = requests.get(f'{self.base_url}/booking?checkin={checkin_date}&checkout={checkout_date}')
 
         return response
+
+    # Refactor the class constructor to include these values?
+    def post_booking(self):
+        # Arrange
+        url = f'{self.base_url}/booking'
+        booking_data = {
+            "firstname": "James",
+            "lastname": "Brown",
+            "totalprice": 111,
+            "depositpaid": True,
+            "bookingdates": {
+                "checkin": "2018-01-01",
+                "checkout": "2019-01-01"
+            },
+            "additionalneeds": "Breakfast"
+        }
+
+        # Act
+        response = requests.post(url, booking_data)
+        return response
