@@ -14,9 +14,9 @@ class BookerClient:
         print(response)
         return response
 
-    def get_single_booking(self, booking_number):
+    def get_single_booking(self, booking_id):
         # Arrange - Follow this string format approach
-        response = requests.get(f'{self.base_url}/booking/{booking_number}')
+        response = requests.get(f'{self.base_url}/booking/{booking_id}')
         return response
 
     def get_booking_by_name(self, lastname, firstname):
@@ -65,8 +65,8 @@ class BookerClient:
         # Arrange
         url = f'{self.base_url}/booking/{booking_id}'
         """
-        For the Header we need to create a dictionary, and assign it to the 
-        headers= as seen below. Token is coming from the get_token fixture.
+           For the Header we need to create a dictionary, and assign it to the 
+           headers= as seen below. Token is coming from the get_token fixture.
         """
         head = {"Cookie": f"token={token}"}
         """
@@ -74,7 +74,7 @@ class BookerClient:
         otherwise you will get an error 
         """
         booking_data = {
-                "firstname": "Gabor",
+                "firstname": "Odett",
                 "lastname": "Zorad",
                 "totalprice": 111,
                 "depositpaid": True,
@@ -87,4 +87,29 @@ class BookerClient:
 
         # Act
         response = requests.put(url, headers=head, json=booking_data)
+        return response
+
+    def patch_update_booking(self, booking_id, token):
+        # Arrange
+        url = f'{self.base_url}/booking/{booking_id}'
+
+        head = {"Cookie": f"token={token}"}
+
+        data = {
+            "firstname": "Alexandro",
+            "lastname": "Del Piero"
+        }
+
+        # Act
+        response = requests.patch(url, headers=head, json=data)
+        return response
+
+    def delete_booking(self, booking_id, token):
+        # Arrange
+        url = f"{self.base_url}/booking/{booking_id}"
+
+        head = {"Cookie": f"token={token}"}
+
+        # Act
+        response = requests.delete(url, headers=head)
         return response
