@@ -15,6 +15,6 @@ Test Cases to cover:
 | Test Case 4 | Get Bookings filtered by name                                                      | N / A  |
 | Test Case 5 | Get Booking filtered by checkin / checkout date                                    | Done   |
 | Test Case 6 | Create (POST) a new Booking                                                        | Done   |
-| Test Case 7 | Partial Update (Patch) - Update a booking with a partial payload                   | N / A  |
+| Test Case 7 | Partial Update (Patch) - Update a booking with a partial payload                   | Done   |
 | Test Case 8 | Update (PUT) an existing booking                                                   | Done   |
-| Test Case 9 | Delete a specific booking                                                          | N / A  |
+| Test Case 9 | Delete a specific booking                                                          | Done   |

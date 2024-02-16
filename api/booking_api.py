@@ -61,6 +61,9 @@ class BookerClient:
         """
         return response
 
+    # Refactor idea: I'm using the url and head multiple times, wouldn't it be better
+    # to create a class method for it, or a fixture for it?
+
     def put_update_booking(self, booking_id, token):
         # Arrange
         url = f'{self.base_url}/booking/{booking_id}'

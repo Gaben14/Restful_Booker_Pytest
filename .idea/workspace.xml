@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6cb0a2a-e14a-4dee-8eb3-6153a945a948" name="Changes" comment="put_update_booking has been completed in the booking_api.py file. test_put_booking.py has also been created.">
-      <change afterPath="$PROJECT_DIR$/tests/test_delete_booking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_patch_booking.py" afterDir="false" />
+    <list default="true" id="e6cb0a2a-e14a-4dee-8eb3-6153a945a948" name="Changes" comment="Created the patch_update_booking and delete booking methods in booking_api.py, also created the test_patch_booking.py and test_delete_booking.py files with test functions.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/booking_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/booking_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_delete_booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_delete_booking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_patch_booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_patch_booking.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_put_booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_put_booking.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707936544196</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Created the patch_update_booking and delete booking methods in booking_api.py, also created the test_patch_booking.py and test_delete_booking.py files with test functions.">
+      <option name="closed" value="true" />
+      <created>1708027557734</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708027557734</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -169,6 +178,7 @@
     <MESSAGE value="booking_api.py has been updated with post_booking method." />
     <MESSAGE value="post_booking method inside booking_api.py has been updated with the right kwargs. (json=)" />
     <MESSAGE value="put_update_booking has been completed in the booking_api.py file. test_put_booking.py has also been created." />
-    <option name="LAST_COMMIT_MESSAGE" value="put_update_booking has been completed in the booking_api.py file. test_put_booking.py has also been created." />
+    <MESSAGE value="Created the patch_update_booking and delete booking methods in booking_api.py, also created the test_patch_booking.py and test_delete_booking.py files with test functions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the patch_update_booking and delete booking methods in booking_api.py, also created the test_patch_booking.py and test_delete_booking.py files with test functions." />
   </component>
 </project>
