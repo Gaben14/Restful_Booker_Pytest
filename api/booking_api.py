@@ -5,7 +5,7 @@ class BookerClient:
 
     # Constructor
     def __init__(self, base_url):
-        # base_url needs to be changed to a GitHub Secret variable later
+        # base_url needs to be changed to a GitHub Secret variable later?
         self.base_url = base_url
 
     def get_ping(self):
@@ -25,14 +25,6 @@ class BookerClient:
 
         return response
 
-    def get_booking_by_date(self, checkin_date, checkout_date):
-        # Arrange
-        # /booking?checkin=2014-03-13&checkout=2014-05-21
-        response = requests.get(f'{self.base_url}/booking?checkin={checkin_date}&checkout={checkout_date}')
-
-        return response
-
-    # Refactor the class constructor to include these values?
     def post_booking(self):
         # Arrange
         url = f'{self.base_url}/booking'
@@ -50,7 +42,8 @@ class BookerClient:
 
         # Act
         response = requests.post(url, json=booking_data)
-        """We need to specify that the booking_data is the JSON that we are sending,
+        """
+        We need to specify that the booking_data is the JSON that we are sending,
         otherwise the requests library will try to use it as the data= parameter, 
         data= is used for forms or form submissions
         
@@ -68,12 +61,12 @@ class BookerClient:
         # Arrange
         url = f'{self.base_url}/booking/{booking_id}'
         """
-           For the Header we need to create a dictionary, and assign it to the 
-           headers= as seen below. Token is coming from the get_token fixture.
+        For the Header we need to create a dictionary, and assign it to the 
+        headers= as seen below. Token is coming from the get_token fixture.
         """
         head = {"Cookie": f"token={token}"}
         """
-        for the PUT command all the values (keys) must be included, 
+        For the PUT command all the values (keys) must be included, 
         otherwise you will get an error 
         """
         booking_data = {
