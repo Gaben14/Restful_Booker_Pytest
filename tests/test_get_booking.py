@@ -5,8 +5,10 @@ def test_get_single_booking(set_up):
     assert single_booking.status_code == 200
     body = single_booking.json()
     print(body)
-    assert body['firstname'] == 'Eric'
-    assert body['lastname'] == 'Smith'
+
+    err_msg = "Error! Incorrect value for "
+    assert body['firstname'] == 'Eric', f"{err_msg} first name!"
+    assert body['lastname'] == 'Smith', f"{err_msg} last name!"
 
 
 def test_get_booking_by_name(set_up):

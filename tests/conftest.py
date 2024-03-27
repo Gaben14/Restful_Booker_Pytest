@@ -13,15 +13,15 @@ def set_up():
     return booking_api.BookerClient(base_url)
 
 
-@pytest.fixture
-def auth_client():
-    return auth_api.AuthClient(base_url)
-
-
 @pytest.fixture()
-def get_token(auth_client):
+def get_token():
     # Act
+    auth_client = auth_api.AuthClient(base_url)
+
     # returning the token from the AuthClient class
     token = auth_client.authentication().json()["token"]
     print(token)
     return token
+
+# tear_down is not needed here at the moment, the libraries will close the session.
+# but you can write it here - Homework read about scopes (set_up, tear_down)

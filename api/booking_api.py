@@ -11,9 +11,10 @@ class BookerClient:
     def get_ping(self):
         response = requests.get(f'{self.base_url}/ping')
 
-        print(response)
         return response
-
+    # Refactor the requests.get into a separate method
+    # 2nd Refactor: Get Builder / Get Request Builder
+    # Builder Pattern read about it
     def get_single_booking(self, booking_id):
         # Arrange - Follow this string format approach
         response = requests.get(f'{self.base_url}/booking/{booking_id}')
@@ -22,7 +23,6 @@ class BookerClient:
     def get_booking_by_name(self, lastname, firstname):
         # Arrange
         response = requests.get(f'{self.base_url}/booking?lastname={lastname}&firstname={firstname}')
-
         return response
 
     def post_booking(self):
@@ -89,6 +89,8 @@ class BookerClient:
         # Arrange
         url = f'{self.base_url}/booking/{booking_id}'
 
+        # Refactor - Move the head to a separate class method in this class.
+        # Fixture will always be executed, class method will only be executed when we call it
         head = {"Cookie": f"token={token}"}
 
         data = {
